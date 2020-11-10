@@ -62,12 +62,11 @@
 			children = (
 				9118CB8E255A6E2A0010D83C /* AppDelegate.swift */,
 				9118CB90255A6E2A0010D83C /* SceneDelegate.swift */,
-				9118CB92255A6E2A0010D83C /* ContentView.swift */,
+				9118CBAA255AA6540010D83C /* View */,
 				9118CB97255A6E2E0010D83C /* Assets.xcassets */,
 				9118CB9C255A6E2E0010D83C /* LaunchScreen.storyboard */,
 				9118CB9F255A6E2E0010D83C /* Info.plist */,
 				9118CB94255A6E2A0010D83C /* Bookworm.xcdatamodeld */,
-				9118CBA6255A97D20010D83C /* AddBookView.swift */,
 				9118CB99255A6E2E0010D83C /* Preview Content */,
 			);
 			path = Bookworm;
@@ -79,6 +78,15 @@
 				9118CB9A255A6E2E0010D83C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9118CBAA255AA6540010D83C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9118CB92255A6E2A0010D83C /* ContentView.swift */,
+				9118CBA6255A97D20010D83C /* AddBookView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
