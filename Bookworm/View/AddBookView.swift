@@ -15,6 +15,9 @@ struct AddBookView: View {
     @State private var review = ""
     @State private var rating = 3
     
+    //to dimiss the view
+    @Environment(\.presentationMode) var presentationMode
+    
     let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
     var body: some View {
         NavigationView{
@@ -39,6 +42,15 @@ struct AddBookView: View {
                 Section{
                     Button("Save"){
                         //add the book
+                        let newBook =  Book(context: self.moc)
+                        newBook.author = self.author
+                        newBook.genre = self.genre
+                        newBook.rating = Int16(self.rating)
+                        newBook.review = self.review
+                        
+                        try? self.moc.save()
+                        self.presentationMode.wrappedValue.dismiss()
+                        
                     }
                 }
             }
