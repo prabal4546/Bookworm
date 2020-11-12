@@ -2,7 +2,8 @@
 //  SceneDelegate.swift
 //  Bookworm
 //
-//  Created by PRABALJIT WALIA     on 10/11/20.
+//  Created by PRABALJIT WALIA
+//  on 10/11/20.
 //
 
 import UIKit
